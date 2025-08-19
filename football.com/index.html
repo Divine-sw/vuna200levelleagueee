@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Faculty Fixtures • 2025</title>
+<link rel="stylesheet" href="fixtures.css">
+</head>
+<body data-theme="dark">
+<header class="topbar">
+  <div class="wrap row">
+    <div class="brand"><span class="ball">⚽</span><span>Faculty Fixtures</span></div>
+    <div class="tools">
+      <label class="sr-only" for="q">Search</label>
+      <div class="search"><span>🔎</span><input id="q" placeholder="Search department or team…" autocomplete="off"/></div>
+      <button id="toggleTheme" class="btn" type="button" title="Toggle theme">🌙 <span class="hint">Theme</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Teams grid -->
+  <div id="grid" class="grid" role="list"></div>
+
+  <!-- Groups -->
+  <section class="groups">
+    <h2>Group Stage (2025)</h2>
+    <div class="gwrap">
+      <div class="group" id="groupA"></div>
+      <div class="group" id="groupB"></div>
+    </div>
+  </section>
+
+  <!-- Fixtures -->
+  <section class="fixtures">
+    <h2>Fixtures (start: Oct 8, 2025)</h2>
+    <div id="fixtures"></div>
+    <p class="note">Week 1 has two matches (one per group). From Week 2 onward, one match per week. Any fixture involving <b>Medicine</b>, <b>Software Engineering</b>, or <b>Pharmacy</b> is set on weekends from Week 2 onward.</p>
+  </section>
+</main>
+
+<footer class="wrap" style="color:var(--muted);font-size:13px;margin-top:24px">
+    <code>TEAMS</code> list if yours differ.
+</footer>
+
+<script src="fixtures.js"></script>
+</body>
+</html>
